@@ -77,6 +77,7 @@ self.addEventListener('install', (event) => {
   event.waitUntil(
     (async () => {
       const cache = await caches.open(CACHE_NAME);
+      cache.add('/');
       cache.add(window.location.href);
       cache.add('/offline');
     })()

@@ -8,6 +8,7 @@ import { StrictMode } from 'react';
 
 import Navbar from './componant/Navbar';
 import Accueil from './pages/Accueil';
+import Offline from './pages/Offline';
 import Page1 from './pages/Page1';
 import Page2 from './pages/Page2';
 import Page3 from './pages/Page3';
@@ -23,6 +24,7 @@ const App = () => {
                 <Navbar/>
                 <Routes>
                     <Route path="/" element={<Accueil />}></Route>
+                    <Route path="/offline" element={<Offline />}></Route>
                     <Route path="/page1" element={<Page1 />}></Route>
                     <Route path="/page2" element={<Page2 />}></Route>
                     <Route path="/page3" element={<Page3 />}></Route>
